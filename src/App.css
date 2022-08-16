@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+.nav{
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  width: 50%;
+  margin-bottom: 50px;
+  margin-left: 40%;
+  padding: 10px;
+
+}
+.nav a{
+  color: inherit;
+  text-decoration: none;
+}
+.Carddiv img{
+width: 100px;
+height: 100px;
+}
+.Carddiv div{
+  display: flex;
+  justify-content: space-around;
+}
+.griddiv{
+  
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.Carddiv{
+  gap: 20px;
+border: 1px solid blueviolet;
+margin: 10px;
+}
+

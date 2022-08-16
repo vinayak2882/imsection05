@@ -1,23 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Componenet/Navbar';
+import AllRoutes from './Pages/AllRoutes';
+import All from './Pages/All';
+import Html from './Pages/Html';
+import Css from './Pages/Css';
+import Javascript from './Pages/Javascript';
 
 function App() {
+
+  let componenet 
+  switch (window.location.pathname) {
+    case "/":
+      componenet = <All/>
+      break;
+    case "/html":
+      componenet = <Html/>
+      break;
+    case "/css":
+      componenet = <Css/>
+      break;
+    case "/javascript":
+      componenet = <Javascript/>
+      break;
+  
+   
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+  
+     <Navbar/>
+    {componenet}
     </div>
   );
 }
