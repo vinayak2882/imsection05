@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './Componenet/Navbar';
-import AllRoutes from './Pages/AllRoutes';
+
 import All from './Pages/All';
 import Html from './Pages/Html';
 import Css from './Pages/Css';
